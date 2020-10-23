@@ -1,8 +1,7 @@
 import json
-from random import randint
 
 
-def parse_request(message: str):
+def parse_request(message: str) -> str:
     parsed_data = {}
     message_to_dict = json.loads(message)
     message_data = message_to_dict['data']
